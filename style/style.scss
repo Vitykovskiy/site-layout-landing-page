@@ -1,0 +1,195 @@
+@import "nullstyle";
+
+/*FONTS*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: Oswald;
+}
+
+p, span {
+  font-family: Raleway;
+}
+
+/*FONTS END*/
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  max-width: 1900px;
+  margin: 0 auto 0;
+  padding: 0.5% 1% 0 1%;
+  /*  background: linear-gradient(to right, #ffffff 61%, #d1d1d1 100%);*/
+  /*  background: url("/images/happy_man.png") 100% 0;*/
+  background: url("../images/happy_man.png") no-repeat 100% 0, linear-gradient(to right, #ffffff 61%, #d1d1d1 100%) no-repeat 100% 0;
+  background-size: contain;
+
+}
+
+header {
+  margin: 0 2% 1% 0;
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    display: flex;
+    flex-flow: wrap row;
+    padding-right: 20px;
+
+    img {
+      float: left;
+      height: 37px;
+      width: 55px;
+      display: inline;
+    }
+
+    h6 {
+      font-size: 19px;
+    }
+  }
+
+  /*END LOGO*/
+  .navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    font-size: 19px;
+    flex-grow: 1;
+
+    .navigation__button {
+      padding: 0px 10px;
+
+      &:focus {
+        color: #ff6514;
+        font-weight: bold;
+      }
+
+      &:hover {
+        cursor: pointer;
+        color: #ff6514;
+      }
+    }
+  }
+
+  /*END NAVIGATION*/
+  .user {
+    display: flex;
+    flex-wrap: wrap;
+
+    .user__bag {
+      display: flex;
+      align-self: flex-end;
+
+      .bag {
+        height: 29px;
+        width: 21px;
+      }
+
+      .full-bag {
+        opacity: 0;
+        position: relative;
+        height: 10px;
+        left: -7px;
+        top: 2px;
+        z-index: 1;
+      }
+
+      &:hover {
+        .full-bag {
+          opacity: 1;
+        }
+      }
+    }
+
+
+    .user__hi {
+      font-size: 18px;
+      align-self: flex-end;
+
+      p {
+        margin-right: 10px;
+
+        &:focus {
+          color: #ff6514;
+          font-weight: bold;
+        }
+
+
+        &:hover {
+          cursor: pointer;
+          color: #ff6514;
+        }
+      }
+    }
+  }
+
+  /*END USER*/
+}
+
+/*END HEADER*/
+
+
+main {
+  flex-grow: 1;
+
+  .describe {
+    margin: 5% 0 0 9%;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    height: 350px;
+    justify-content: flex-start;
+
+    .describe__header {
+      h2 {
+        font-size: 55px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+    }
+
+    .describe__text {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      flex-grow: 1;
+
+      p {
+        margin: 5px 0;
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+
+    .describe__nav {
+      margin-top: 5px;
+      align-self: flex-start;
+      border-bottom: 1px #b5b5b5 solid;
+
+      span {
+        display: inline-block;
+        font-size: 25px;
+        padding: 0 20px 10px;
+        margin-bottom: 5px;
+
+        &:hover {
+          cursor: pointer;
+          color: #ff6514;
+        }
+
+        &:focus {
+          color: #ff6514;
+          margin-bottom: -5px;
+          border-bottom: 5px #b5b5b5 solid;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  /*END DESCRIBE*/
+
+}
+
+
+/*END MAIN*/
+

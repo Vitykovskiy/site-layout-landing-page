@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  ottom: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*FONTS*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: Oswald;
+}
+
+p, span {
+  font-family: Raleway;
+}
+
+/*FONTS END*/
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  max-width: 1900px;
+  margin: 0 auto 0;
+  padding: 0.5% 1% 0 1%;
+  /*  background: linear-gradient(to right, #ffffff 61%, #d1d1d1 100%);*/
+  /*  background: url("/images/happy_man.png") 100% 0;*/
+  background: url("../images/happy_man.png") no-repeat 100% 0, linear-gradient(to right, #ffffff 61%, #d1d1d1 100%) no-repeat 100% 0;
+  background-size: contain;
+}
+
+header {
+  margin: 0 2% 1% 0;
+  display: flex;
+  justify-content: space-between;
+  /*END LOGO*/
+  /*END NAVIGATION*/
+  /*END USER*/
+}
+header .logo {
+  display: flex;
+  flex-flow: wrap row;
+  padding-right: 20px;
+}
+header .logo img {
+  float: left;
+  height: 37px;
+  width: 55px;
+  display: inline;
+}
+header .logo h6 {
+  font-size: 19px;
+}
+header .navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  font-size: 19px;
+  flex-grow: 1;
+}
+header .navigation .navigation__button {
+  padding: 0px 10px;
+}
+header .navigation .navigation__button:focus {
+  color: #ff6514;
+  font-weight: bold;
+}
+header .navigation .navigation__button:hover {
+  cursor: pointer;
+  color: #ff6514;
+}
+header .user {
+  display: flex;
+  flex-wrap: wrap;
+}
+header .user .user__bag {
+  display: flex;
+  align-self: flex-end;
+}
+header .user .user__bag .bag {
+  height: 29px;
+  width: 21px;
+}
+header .user .user__bag .full-bag {
+  opacity: 0;
+  position: relative;
+  height: 10px;
+  left: -7px;
+  top: 2px;
+  z-index: 1;
+}
+header .user .user__bag:hover .full-bag {
+  opacity: 1;
+}
+header .user .user__hi {
+  font-size: 18px;
+  align-self: flex-end;
+}
+header .user .user__hi p {
+  margin-right: 10px;
+}
+header .user .user__hi p:focus {
+  color: #ff6514;
+  font-weight: bold;
+}
+header .user .user__hi p:hover {
+  cursor: pointer;
+  color: #ff6514;
+}
+
+/*END HEADER*/
+main {
+  flex-grow: 1;
+  /*END DESCRIBE*/
+}
+main .describe {
+  margin: 5% 0 0 9%;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  height: 350px;
+  justify-content: flex-start;
+}
+main .describe .describe__header h2 {
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+main .describe .describe__text {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex-grow: 1;
+}
+main .describe .describe__text p {
+  margin: 5px 0;
+  font-size: 18px;
+  line-height: 30px;
+}
+main .describe .describe__nav {
+  margin-top: 5px;
+  align-self: flex-start;
+  border-bottom: 1px #b5b5b5 solid;
+}
+main .describe .describe__nav span {
+  display: inline-block;
+  font-size: 25px;
+  padding: 0 20px 10px;
+  margin-bottom: 5px;
+}
+main .describe .describe__nav span:hover {
+  cursor: pointer;
+  color: #ff6514;
+}
+main .describe .describe__nav span:focus {
+  color: #ff6514;
+  margin-bottom: -5px;
+  border-bottom: 5px #b5b5b5 solid;
+  font-weight: bold;
+}
+
+/*END MAIN*/
